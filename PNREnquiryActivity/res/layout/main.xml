@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#084137"
+  android:orientation="vertical"
+  tools:context=".PNREnquiryActivity" >
+
+  <TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_weight="2" >
+
+    <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:src="@drawable/icon"
+      android:contentDescription="@string/indian_railway" />
+  </TableRow>
+
+  <TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_weight="1" >
+
+    <AutoCompleteTextView
+      android:id="@+id/pnr"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:ems="10"
+      android:hint="@string/enter_input"
+      android:imeOptions="actionDone"
+      android:inputType="number"
+      android:textSize="20sp" >
+      <requestFocus />
+    </AutoCompleteTextView>
+    
+  </TableRow>
+
+  <RadioGroup
+    android:id="@+id/radioGroup1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="2dp" >
+             
+    <RadioButton
+      android:id="@+id/internet"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:checked="true"
+      android:text="@string/use_internet" />
+
+    <RadioButton
+      android:id="@+id/sms"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/use_sms" />
+  </RadioGroup>
+
+  <TableRow
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_weight="1" >
+
+    <Button
+        android:id="@+id/checkStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#D6CED2"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="3"
+        android:text="@string/fetch_status"
+        android:textColor="#3D3D3D"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+    
+  </TableRow>
+
+</LinearLayout>
